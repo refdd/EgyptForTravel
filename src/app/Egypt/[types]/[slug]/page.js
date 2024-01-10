@@ -9,8 +9,10 @@ import ImagesShcemas from "@/components/shcemas/ImagesShcemas";
 const BottonInquire = dynamic(() =>
   import("@/components/buttons/ButtonInquire")
 );
-const Itinerary = dynamic(() => import("@/components/singelTour/Itinerary"));
-const HighLights = dynamic(() => import("@/components/singelTour/HighLights"));
+const TapsSingleTour = dynamic(() =>
+  import("@/components/singelTour/TapsSingleTour")
+);
+
 const FormInquery = dynamic(() => import("@/components/form/FormInquery"));
 const ExploreSection = dynamic(() =>
   import("@/components/explore/ExploreSection")
@@ -38,6 +40,7 @@ async function singelTour({ params: { slug, types } }) {
     itineraries,
     image,
     start_price,
+    facilities,
   } = singletour?.data;
 
   // console.log(singletour?.data);
@@ -49,7 +52,7 @@ async function singelTour({ params: { slug, types } }) {
         title={title}
         image={image}
         description={description}
-        urlTour={`https://www.nilecruisez.com/Egypt/${types}/${slug}`}
+        urlTour={`https://www.egyptfortravel.com/Egypt/${types}/${slug}`}
       />
       <div className="container mx-auto px-4  md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-6 gap-7 ">
@@ -58,19 +61,10 @@ async function singelTour({ params: { slug, types } }) {
               titel={title}
               location={`cities : ${destinations} `}
               reviews={`${start_price - 10} reviews`}
+              start_price={start_price}
             />
             <SingelGallery gallery={gallery} />
-
-            <HighLights
-              description={description}
-              included={included}
-              excluded={excluded}
-              run={run}
-              type={type}
-              duration={duration}
-              destinations={destinations}
-            />
-            <Itinerary itinerariesDays={itineraries} />
+            <TapsSingleTour tourData={singletour?.data} />
           </div>
           <div className="md:col-span-2">
             <Suspense fallback={<>-----------</>}>

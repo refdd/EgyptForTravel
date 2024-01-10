@@ -50,9 +50,9 @@ function CardTour({
         <div className="flex flex-col gap-3  px-4 pt-5 ">
           {/* title */}
           <Link href={`/Egypt/${slugType}/${slug}`}>
-            <h2 className="  text-[#17233e] text-xl md:text-[22px] font-bold cursor-pointer md:hover:text-bsPrimary transition-all ">
+            <h3 className="  text-[#17233e] text-xl md:text-[22px] font-bold cursor-pointer md:hover:text-bsPrimary transition-all ">
               {title}
-            </h2>
+            </h3>
           </Link>
 
           {/* reatiog */}

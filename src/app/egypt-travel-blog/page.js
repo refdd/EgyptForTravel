@@ -15,12 +15,12 @@ export async function generateMetadata({ params: { slug }, searchParams }) {
 }
 async function ListBlog() {
   const blog = await getData(`/posts`);
-
+  // console.log(blog);
   return (
     <div>
       <HeaderPages
-        typeList={"List Travel Blog "}
-        listSlug={{ title: "blog", slug: "egypt-travel-blog" }}
+        typeList={"egypt travel blog "}
+        listSlug={{ title: "egypt travel blog", slug: "egypt-travel-blog" }}
         singleSlug={""}
       />
       <div className="container mx-auto px-4 mt-28 md:px-10">

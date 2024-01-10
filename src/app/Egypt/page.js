@@ -26,12 +26,17 @@ async function DestinationPage() {
   // console.log(egyptPage?.data?.meta_title);
   return (
     <div>
-      <HeaderPages
-        typeList={"Egypt tours"}
+      {/* <HeaderPages
+        typeList={"flksjdlkfj"}
         listSlug={{ title: "Egypt", slug: "Egypt" }}
+        singleSlug={"efgfd"}
+      /> */}
+      <HeaderPages
+        typeList={"Egpyt Tours"}
+        listSlug={{ title: "Egpyt Tours", slug: "Egpyt" }}
         singleSlug={""}
       />
-      <HeaderSingle titel={"Egpyt tours"} />
+      {/* <HeaderSingle titel={"Egpyt tours"} /> */}
       <div className="container mx-auto px-4 md:px-10 ">
         <div className=" grid grid-cols-1 md:grid-cols-6 gap-3  ">
           <div className="  md:col-span-4">
@@ -53,8 +58,8 @@ async function DestinationPage() {
           <HeaderSections
             title={""}
             decs={""}
-            partOne={"Related"}
-            partTwo={"Tour"}
+            partOne={"Top Egypt "}
+            partTwo={"Tours"}
           />
           <ToursSlider toursData={tours?.data} slugType={""} />
         </div>
