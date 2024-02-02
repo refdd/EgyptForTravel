@@ -11,7 +11,7 @@ function Itinerary({ itinerariesDays }) {
                 {item.title}
               </h2>
               <div
-                className="textEditor mt-3"
+                className="textEditorItenerary text-base font-medium !leading-[34px] !text-black "
                 dangerouslySetInnerHTML={{ __html: item.description }}
               />
             </div>

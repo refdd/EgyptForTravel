@@ -32,11 +32,11 @@ async function DestinationPage() {
         singleSlug={"efgfd"}
       /> */}
       <HeaderPages
-        typeList={"Egpyt Tours"}
-        listSlug={{ title: "Egpyt Tours", slug: "Egpyt" }}
+        typeList={"Egypt Tours"}
+        listSlug={{ title: "Egypt Tours", slug: "Egypt" }}
         singleSlug={""}
       />
-      {/* <HeaderSingle titel={"Egpyt tours"} /> */}
+      {/* <HeaderSingle titel={"Egypt tours"} /> */}
       <div className="container mx-auto px-4 md:px-10 ">
         <div className=" grid grid-cols-1 md:grid-cols-6 gap-3  ">
           <div className="  md:col-span-4">
