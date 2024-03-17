@@ -29,6 +29,20 @@ function ListMenuBar({ menuBar, dataManu, handleCloseMenu }) {
           </div>
         </Link>
       </li>
+      <li className="border-b-2 text-left w-full p-2 uppercase  transition-all hover:bg-[#cccccc] ">
+        <Link href="/Egypt/multi-country-trips">
+          <div onClick={handleCloseMenu} className=" w-full h-full">
+            <span>multi country trips</span>
+          </div>
+        </Link>
+      </li>
+      <li className="border-b-2 text-left w-full p-2 uppercase  transition-all hover:bg-[#cccccc] ">
+        <Link href="/Egypt/egypt-day-tours">
+          <div onClick={handleCloseMenu} className=" w-full h-full">
+            <span>day tours</span>
+          </div>
+        </Link>
+      </li>
       <li className="border-b-2  text-left w-full p-2 uppercase  transition-all hover:bg-[#cccccc] ">
         <Link href="/egypt-travel-blog">
           <div onClick={handleCloseMenu} className=" w-full h-full">

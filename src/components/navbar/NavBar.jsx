@@ -18,7 +18,7 @@ function NavBar() {
   };
   return (
     <div className="container mx-auto px-4">
-      <div className="grid grid-cols-3 lg:grid-cols-4 items-center py-3">
+      <div className="grid grid-cols-3 lg:grid-cols-7 items-center py-3">
         <div className="">
           <Link href={`/`}>
             <div className="relative w-full h-[50px]">
@@ -39,7 +39,7 @@ function NavBar() {
         <div className=" col-span-2 lg:hidden">
           <MenuIcon handelMenubar={handelMenubar} />
         </div>
-        <div className=" lg:col-span-3 hidden lg:block">
+        <div className=" lg:col-span-6 hidden lg:block">
           <NavLinks />
         </div>
       </div>

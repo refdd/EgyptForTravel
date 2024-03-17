@@ -6,6 +6,8 @@ function OrganizationShcams({}) {
     "@context": "http://schema.org",
     "@type": "Organization",
     name: "Around Egypt Tours",
+    address:
+      "39 Zohair Sabry St., Branched from, El Tayaran St, Nasr City, Cairo Governorate 11765",
     url: "https://www.egyptfortravel.com/",
     logo: "https://www.egyptfortravel.com/_next/static/media/aet-logo.b01bd2f4.svg",
     aggregateRating: {

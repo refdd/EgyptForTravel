@@ -5,7 +5,7 @@ function NavLinks({}) {
   return (
     <div className="">
       <div className=" flex items-center  justify-between ">
-        <ul className="flex items-center flex-1 gap-20">
+        <ul className="flex items-center flex-1 gap-8">
           <li className="text-lg uppercase text-bsDark transition  hover:text-[#029e9d] ">
             <Link href="/">Home</Link>
           </li>
@@ -13,7 +13,13 @@ function NavLinks({}) {
             <Link href={`/Egypt/egypt-travel-packages`}>Traval Packages</Link>
           </li>
           <li className=" text-lg uppercase  text-bsDark transition  hover:text-[#029e9d] ">
-            <Link href={`/Egypt/nile-cruises`}>Egypt Cruises</Link>
+            <Link href={`/Egypt/nile-cruises`}>nile Cruises</Link>
+          </li>
+          <li className=" text-lg uppercase  text-bsDark transition  hover:text-[#029e9d] ">
+            <Link href={`/Egypt/multi-country-trips`}>MULTI COUNTRY TRIPS</Link>
+          </li>
+          <li className=" text-lg uppercase  text-bsDark transition  hover:text-[#029e9d] ">
+            <Link href={`/Egypt/egypt-day-tours`}> DAY TOURS</Link>
           </li>
           <li className=" text-lg uppercase text-bsDark transition  hover:text-[#029e9d] ">
             <Link href={`/egypt-travel-blog`}>Blog</Link>
